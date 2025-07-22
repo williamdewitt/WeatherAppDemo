@@ -28,4 +28,4 @@ jobs:
 
     - name: Copy files to server
       run: |
-        rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./src/bin/Release/net9.0/publish/ root@192.168.88.216:/var/www/weatherappdemo
+        rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./src/bin/Release/net9.0/publish/ root@192.168.88.212:/var/www/weatherappdemo
