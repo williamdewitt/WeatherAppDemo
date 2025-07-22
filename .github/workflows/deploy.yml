@@ -28,7 +28,7 @@ jobs:
 
     - name: Copy files to server
       run: |
-        rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./src/bin/Release/net9.0/publish/ root@weatherappdemo.leansparkdigital.com:/var/www/myapp
+        rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./src/bin/Release/net9.0/publish/ root@weatherappdemo.leansparkdigital.com:/var/www/weatherappdemo
 
     - name: Restart app (systemd example)
       run: ssh root 'sudo systemctl restart myapp.service'
